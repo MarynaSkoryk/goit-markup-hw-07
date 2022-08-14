@@ -459,13 +459,13 @@ body {
 }
 
 /*Footer*/
-.all-footer {
+.footer {
   background-color: var(--secondary-background-color);
   padding: 60px 0;
   display: flex;
 }
 
-.footer-style {
+.section-footer {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
@@ -485,7 +485,7 @@ body {
   text-decoration: none;
   margin-bottom: 20px;
 }
-.logo-footer > .second-word-logo {
+.logo-footer > .logo-footer__second-word {
   color: var(--accent-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -493,7 +493,7 @@ body {
 .logo-footer:focus {
   color: var(--accent-text-color);
 }
-.address {
+.address-block__address-info {
   color: var(--color-text-white);
   font-size: 14px;
   line-height: 1.71;
@@ -501,11 +501,11 @@ body {
   font-style: normal;
   margin-bottom: 9px;
 }
-.link-footer:not(:last-child) {
+.footer-list:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-link {
+.footer-list__address-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -513,11 +513,11 @@ body {
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-link:hover,
-.address-link:focus {
+.footer-list__address-link:hover,
+.footer-list__address-link:focus {
   color: var(--accent-text-color);
 }
-.all-address {
+.address-block {
   margin-right: 70px;
 }
 
@@ -531,10 +531,10 @@ body {
   color: var(--color-text-white);
   margin-bottom: 20px;
 }
-.footer-social-list {
+.footer-social__list {
   display: flex;
 }
-.footer-box {
+.footer-social__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -546,15 +546,15 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link:not(:last-child) {
+.footer-social__link:not(:last-child) {
   margin-right: 10px;
 }
-.footer-social-logo {
+.footer-social__logo {
   justify-content: center;
   text-align: center;
 }
-.footer-box:hover,
-.footer-box:focus {
+.footer-social__box:hover,
+.footer-social__box:focus {
   background-color: var(--accent-text-color);
   fill: var(--color-text-white);
 }
@@ -566,7 +566,7 @@ body {
   display: flex;
 }
 
-.form-input {
+.signup-form__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -580,7 +580,7 @@ body {
   margin-right: 12px;
 }
 
-.button-sign-up {
+.signup-form__button {
   display: flex;
   width: 200px;
   height: 50px;
@@ -601,11 +601,11 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-send {
+.signup-form__icon-send {
   margin-left: 10px;
 }
-.signup-form:hover .button-sign-up,
-.form-input:focus + .button-sign-up {
+.signup-form:hover .signup-form__button,
+.signup-form__input:focus + .signup-form__button {
   background-color: var(--color-change-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
