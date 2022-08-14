@@ -1,6 +1,6 @@
 /*Hero*/
 .hero {
-  background-color: var(--secondary-background-color);
+  background-color: $secondary-background-color;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
@@ -20,7 +20,7 @@
   margin: 0 auto;
 }
 .hero-container__main-title {
-  color: var(--color-text-white);
+  color: $color-text-white;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -30,8 +30,8 @@
   text-align: center;
 }
 .hero-container__button {
-  background-color: var(--accent-text-color);
-  color: var(--color-text-white);
+  background-color: $accent-text-color;
+  color: $color-text-white;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -42,9 +42,9 @@
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms $cubic-bezier;
 }
 .hero-container__button:hover,
 .hero-container__button:focus {
-  background-color: var(--color-change-button);
+  background-color: $color-change-button;
 }

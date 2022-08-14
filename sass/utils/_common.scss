@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*Body*/
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $main-background-color;
+  color: $primary-text-color;
+  margin: 0;
+}

@@ -1,13 +1,13 @@
 /*Наша команда*/
 
 .section-crew {
-  background-color: var(--third-background-color);
+  background-color: $third-background-color;
   padding-bottom: 94px;
   padding-top: 94px;
 }
 .section-crew__title {
   text-align: center;
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -29,7 +29,7 @@
 }
 
 .work-card {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   list-style: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -37,7 +37,7 @@
 }
 
 .work-card-box__name {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -72,14 +72,13 @@
   border-radius: 50%;
   background-color: transparent;
   color: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
 }
 .social-block__icon {
   fill: currentColor;
 }
 .social-block__link:hover,
 .social-block__link:focus {
-  background-color: var(--accent-text-color);
-  color: var(--color-text-white);
+  background-color: $accent-text-color;
+  color: $color-text-white;
 }
