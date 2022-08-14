@@ -11,15 +11,17 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.section-doing__list .section-doing__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .section-doing__list {
   display: flex;
 }
 .section-doing__item {
   max-width: 100%;
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-doing__name {

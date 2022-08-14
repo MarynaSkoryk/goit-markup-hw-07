@@ -21,33 +21,33 @@
   letter-spacing: 0.02em;
   list-style: none;
 }
+.site-nav__nav-item {
+  justify-content: center;
+  align-self: center;
 
-.site-nav .site-nav__nav-item:not(:last-child) {
-  margin-right: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link-nav {
   display: block;
   padding: 32px 0;
   color: inherit;
-}
 
-.site-nav > .site-nav__nav-item > .site-nav__link-nav--current {
-  color: $accent-text-color;
-  position: relative;
-}
-.link:hover,
-.link:focus {
-  color: $accent-text-color;
-}
-.site-nav__link-nav--current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-text-color;
-  position: absolute;
-  bottom: 0;
+  &--current {
+    color: $accent-text-color;
+    position: relative;
+  }
+  &--current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-text-color;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 /*Main-auth-nav*/
@@ -68,9 +68,6 @@
   text-decoration: none;
 }
 
-.auth-nav .auth-nav__nav-item:not(:last-child) {
-  margin-right: 50px;
-}
 .auth-nav__link {
   display: flex;
   align-items: center;
@@ -78,15 +75,20 @@
   color: $primary-text-color;
   text-decoration: none;
   transition: color 250ms $cubic-bezier, stroke 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    stroke: $accent-text-color;
+  }
 }
-.site-nav__nav-item,
+
 .auth-nav__nav-item {
   justify-content: center;
   align-self: center;
-}
-.auth-nav__link:hover,
-.auth-nav__link:focus {
-  stroke: $accent-text-color;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .auth-nav__button-icon {
   margin-right: 10px;

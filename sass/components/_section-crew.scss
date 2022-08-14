@@ -18,9 +18,6 @@
   display: flex;
 }
 
-.section-crew__list .work-card:not(:last-child) {
-  margin-right: 30px;
-}
 .work-card-box {
   padding: 30px 32px;
 
@@ -34,6 +31,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-card-box__name {
@@ -57,11 +58,13 @@
   align-items: center;
   justify-content: center;
 }
-.social-block__list:not(:last-child) {
-  margin-right: 10px;
-}
+
 .social-block__list {
   display: block;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-block__link {
   display: flex;
@@ -73,12 +76,13 @@
   background-color: transparent;
   color: #afb1b8;
   transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+    color: $color-text-white;
+  }
 }
 .social-block__icon {
   fill: currentColor;
-}
-.social-block__link:hover,
-.social-block__link:focus {
-  background-color: $accent-text-color;
-  color: $color-text-white;
 }

@@ -6,11 +6,13 @@
 .our-features {
   display: flex;
 }
-.our-features .our-features__list:not(:last-child) {
-  margin-right: 30px;
-}
+
 .our-features__list {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .our-features__subtitle {

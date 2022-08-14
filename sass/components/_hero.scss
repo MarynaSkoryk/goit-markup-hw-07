@@ -43,8 +43,9 @@
   border-radius: 4px;
   padding: 10px 32px;
   transition: background-color 250ms $cubic-bezier;
-}
-.hero-container__button:hover,
-.hero-container__button:focus {
-  background-color: $color-change-button;
+
+  &:hover,
+  &:focus {
+    background-color: $color-change-button;
+  }
 }

@@ -9,12 +9,13 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-bottom: 20px;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
 }
-.logo-footer > .logo-footer__second-word {
+.logo-footer__second-word {
   color: $accent-text-color;
   transition: color 250ms $cubic-bezier;
-}
-.logo-footer:hover,
-.logo-footer:focus {
-  color: $accent-text-color;
 }
