@@ -14,9 +14,7 @@
 
 .address-block__address-info {
   color: $color-text-white;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   font-style: normal;
   margin-bottom: 9px;
 }
@@ -25,9 +23,7 @@
 }
 
 .footer-list__address-link {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   transition: color 250ms $cubic-bezier;
@@ -44,10 +40,7 @@
 
 .strong-word {
   display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: $color-text-white;
   margin-bottom: 20px;

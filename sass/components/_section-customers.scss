@@ -4,11 +4,8 @@
   padding-bottom: 94px;
 }
 .customers__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  @include font(700, 36px, 1.17, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: $title-text-color;
   margin-bottom: 50px;
 }

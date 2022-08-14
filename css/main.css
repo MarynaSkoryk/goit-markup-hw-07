@@ -63,6 +63,12 @@ body {
   margin: 0 auto;
 }
 
+.card-item {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -396,6 +402,7 @@ body {
 }
 
 .work-card-box__position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -437,9 +444,9 @@ body {
 .customers__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
   margin-bottom: 50px;
 }
@@ -515,6 +522,7 @@ body {
 
 .address-block__address-info {
   color: #ffffff;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -527,6 +535,7 @@ body {
 }
 
 .footer-list__address-link {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -547,7 +556,7 @@ body {
   display: block;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -619,14 +628,14 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  letter-spacing: 0.06em;
+  cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
   border: none;
@@ -712,9 +721,6 @@ body {
 
 .card-item {
   padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .card-item__name {
@@ -727,6 +733,7 @@ body {
 }
 
 .card-item__description {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -761,10 +768,11 @@ body {
 }
 
 .work-thumb__text {
+  font-weight: 400;
+  font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  font-size: 18px;
   padding: 0 24px;
   position: absolute;
   width: 100%;
@@ -874,6 +882,7 @@ body {
 }
 
 .modal-form__label {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -937,6 +946,7 @@ body {
 
 .user-id--feedback textarea::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -945,6 +955,7 @@ body {
 
 .user-id--feedback textarea::-moz-placeholder {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -953,6 +964,7 @@ body {
 
 .user-id--feedback textarea:-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -961,6 +973,7 @@ body {
 
 .user-id--feedback textarea::-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -969,6 +982,7 @@ body {
 
 .user-id--feedback textarea::placeholder {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -982,6 +996,7 @@ body {
 }
 
 .user-policy__label {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -991,12 +1006,13 @@ body {
 }
 
 .user-policy__link {
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.85em;
   /*line-height: 1.71;*/
-  letter-spacing: 0.03em;
   text-decoration: none;
   display: inline-block;
-  line-height: 0.85;
   border-bottom: 1px solid #2196f3;
   color: #2196f3;
 }

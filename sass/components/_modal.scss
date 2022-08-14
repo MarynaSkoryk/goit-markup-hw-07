@@ -58,10 +58,7 @@
 }
 
 .modal__strong {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
+  @include font(700, 20px, 1.15, 0.03em);
   color: $title-text-color;
 
   display: block;
@@ -76,9 +73,7 @@
 }
 
 .modal-form__label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.17, 0.01em);
   color: $primary-text-color;
   margin-bottom: 4px;
   display: block;
@@ -135,9 +130,7 @@
 
 .user-id--feedback textarea::placeholder {
   font-family: $font-family;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.17, 0.01em);
   color: rgba(117, 117, 117, 0.5);
 }
 .user-policy {
@@ -147,20 +140,16 @@
   margin-bottom: 30px;
 }
 .user-policy__label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: $primary-text-color;
   display: block;
   cursor: pointer;
 }
 .user-policy__link {
-  font-size: 14px;
+  @include font(400, 14px, 1.14, 0.85em);
   /*line-height: 1.71;*/
-  letter-spacing: 0.03em;
   text-decoration: none;
   display: inline-block;
-  line-height: 0.85;
   border-bottom: 1px solid $accent-text-color;
   color: $accent-text-color;
 }
