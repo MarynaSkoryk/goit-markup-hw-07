@@ -1,0 +1,85 @@
+/*Наша команда*/
+
+.section-crew {
+  background-color: var(--third-background-color);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.section-crew__title {
+  text-align: center;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.section-crew__list {
+  display: flex;
+}
+
+.section-crew__list .work-card:not(:last-child) {
+  margin-right: 30px;
+}
+.work-card-box {
+  padding: 30px 32px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.work-card {
+  background-color: var(--main-background-color);
+  list-style: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.work-card-box__name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.work-card-box__position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.social-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-block__list:not(:last-child) {
+  margin-right: 10px;
+}
+.social-block__list {
+  display: block;
+}
+.social-block__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-block__icon {
+  fill: currentColor;
+}
+.social-block__link:hover,
+.social-block__link:focus {
+  background-color: var(--accent-text-color);
+  color: var(--color-text-white);
+}
