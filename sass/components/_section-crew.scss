@@ -15,14 +15,11 @@
   margin-bottom: 50px;
 }
 .section-crew__list {
-  display: flex;
+  @extend %centered-flex;
 }
 
 .work-card-box {
   padding: 30px 32px;
-
-  justify-content: center;
-  align-items: center;
 }
 
 .work-card {
@@ -54,9 +51,7 @@
   margin-bottom: 16px;
 }
 .social-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %centered-flex;
 }
 
 .social-block__list {
@@ -67,9 +62,7 @@
   }
 }
 .social-block__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;

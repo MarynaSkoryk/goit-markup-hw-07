@@ -25,10 +25,8 @@
 }
 
 .client-box__link {
-  display: flex;
+  @extend %centered-flex;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;

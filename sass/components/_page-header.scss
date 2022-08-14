@@ -8,9 +8,7 @@
 
 /*Main-site-nav*/
 .main-site-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
 }
 .site-nav {
   display: flex;
@@ -52,9 +50,7 @@
 
 /*Main-auth-nav*/
 .main-auth-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centered-flex;
   margin-left: auto;
 }
 .auth-nav {
@@ -69,8 +65,7 @@
 }
 
 .auth-nav__link {
-  display: flex;
-  align-items: center;
+  @extend %centered-flex;
   padding: 32px 0;
   color: $primary-text-color;
   text-decoration: none;
