@@ -12,9 +12,7 @@
 
 .card-item {
   padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  @extend %card-borders;
 }
 
 .card-item__name {
