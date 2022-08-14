@@ -22,7 +22,7 @@ ul {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family;
   background-color: $main-background-color;
   color: $primary-text-color;
   margin: 0;
