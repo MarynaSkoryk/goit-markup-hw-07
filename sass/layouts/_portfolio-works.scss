@@ -1,6 +1,6 @@
 /*Наши работы*/
 .container-works {
-  @extend %centered-flex;
+  @include centered-flex;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -12,7 +12,7 @@
 
 .card-item {
   padding: 20px 24px;
-  @extend %card-boders;
+  @include card-boders;
 }
 
 .card-item__name {
@@ -53,7 +53,7 @@
   padding: 0 24px;
 
   position: absolute;
-  @extend %centered-flex;
+  @include centered-flex;
   width: 100%;
   height: 100%;
 

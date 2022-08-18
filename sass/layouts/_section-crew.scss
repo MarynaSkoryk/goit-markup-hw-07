@@ -12,7 +12,7 @@
   margin-bottom: 50px;
 }
 .section-crew__list {
-  @extend %centered-flex;
+  @include centered-flex;
 }
 
 .work-card-box {
@@ -43,7 +43,7 @@
   margin-bottom: 16px;
 }
 .social-block {
-  @extend %centered-flex;
+  @include centered-flex;
 }
 
 .social-block__list {
@@ -54,7 +54,7 @@
   }
 }
 .social-block__link {
-  @extend %centered-flex;
+  @include centered-flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;

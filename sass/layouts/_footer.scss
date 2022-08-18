@@ -8,8 +8,22 @@
 .section-footer {
   width: 1200px;
   padding: 0 15px;
-  @extend %centered-flex;
+  @include centered-flex;
   align-items: baseline;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__logo--color {
+  color: $color-text-white;
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}
+.footer__logo--second-word-color {
+  color: $accent-text-color;
+  transition: color 250ms $cubic-bezier;
 }
 
 .address-block__address-info {
@@ -49,7 +63,7 @@
   display: flex;
 }
 .footer-social__box {
-  @extend %centered-flex;
+  @include centered-flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;

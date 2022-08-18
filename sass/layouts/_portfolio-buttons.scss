@@ -4,7 +4,7 @@
   padding-bottom: 94px;
 }
 .buttons-list {
-  @extend %centered-flex;
+  @include centered-flex;
   margin-bottom: 50px;
 }
 .buttons-list__item {

@@ -34,29 +34,6 @@
     transform: translate(-50%, -50%) scale(0.1);
   }
 }
-.modal__button-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  @extend %centered-flex;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: inherit;
-  cursor: pointer;
-  padding: 0;
-}
-.modal__button-close-icon {
-  fill: currentColor;
-  transition: fill 250ms $cubic-bezier;
-
-  .modal__button-close:hover &,
-  .modal__button-close:focus & {
-    fill: $accent-text-color;
-  }
-}
-
 .modal__strong {
   @include font(700, 20px, 1.15, 0.03em);
   color: $title-text-color;
@@ -146,8 +123,8 @@
   cursor: pointer;
 }
 .user-policy__link {
-  @include font(400, 14px, 1.14, 0.85em);
   /*line-height: 1.71;*/
+  @include font(400, 14px, 0.85, 0.03em);
   text-decoration: none;
   display: inline-block;
   border-bottom: 1px solid $accent-text-color;
@@ -155,7 +132,8 @@
 }
 
 .modal-form__button {
-  @extend %centered-margin;
+  @include centered-margin;
+  display: flex;
 }
 .user-policy__icon-no-checked {
   position: absolute;
